@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ 	<form action="/bugger" method="get">
+		<h3>오늘의 메뉴</h3>
+		
+            <table border = "1" >
+             <tr>
+                <th>메뉴</th>
+                <th>품목</th>
+                <th>가격</th>
+                
+            </tr>
+            <tr>
+                <td rowspan ="3" colspan="1" width = "130px" >메인메뉴</td>
+                <td wirdth="800">한우버거</td>
+                <td wirdth="800">5000원</td>
+            </tr>
+            <tr>
+            	<td wirdth="800">밥버거</td>
+            	<td wirdth="800">4500원</td>
+            </tr>
+            <tr>
+            	<td wirdth="800">치즈버거</td>
+            	<td wirdth="800">4000원</td>
+            </tr>
+            <tr>
+            	<td rowspan ="2" colspan ="1" width = "100px">사이드메뉴</td>
+            	<td wirdth="800">감자튀김</td>
+            	<td wirdth="800">1500원</td>
+      		</tr>
+      		<tr>
+      			<td wirdth="800">어니언링</td>
+      			<td wirdth="800">1700원</td>
+      		</tr>
+      		<tr>
+      			<td rowspan = "4" colspan ="1" width ="160px">음료메뉴</td>
+      			<td wirdth="800">콜라</td>
+      			<td wirdth="800">1000원</td>
+      		</tr>
+      		<tr>
+      			<td wirdth="800">사이다</td>
+      			<td wirdth="800">1000원</td>
+      		</tr>
+      		<tr>
+      			<td wirdth="800">커피</td>
+      			<td wirdth="800">1500원</td>
+      		</tr>
+      		<tr>
+      			<td wirdth="800">밀크쉐이크</td>
+      			<td wirdth="800">2500원</td>
+      		</tr>
+            </table>
+            <p>
+            메인메뉴 : <select name= "bbugger">
+            <option value = "햄버거를 선택하세요">햄버거를 선택하세요</option>
+			<option value = "한우버거">한우버거</option>
+			<option value = "밥버거">밥버거</option>
+			<option value = "치즈버거">치즈버거</option>
+            </select>
+            </p>
+            <p>
+            사이드메뉴 : <select name= "side">
+            <option value = "사이드를 선택하세요">사이드를 선택하세요</option>
+			<option value = "감자튀김">감자튀김</option>
+			<option value = "어니언링">어니언링</option>
+            </select>
+            </p>
+            <p>
+            음료메뉴 : <select name= "bervarage">
+            <option value = "음료를 선택하세요">음료를 선택하세요</option>
+			<option value = "콜라">콜라</option>
+			<option value = "사이다">사이다</option>
+			<option value = "커피">커피</option>
+			<option value = "밀크쉐이크">밀크쉐이크</option>
+			
+            </select>
+            </p>
+   
+		<input type="submit" name="주문하기">
+		<input type="reset" name="취소">
+		</form> 
+</body>
+</html>
